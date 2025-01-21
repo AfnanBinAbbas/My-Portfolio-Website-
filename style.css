@@ -105,7 +105,8 @@ section {
 }
 
 .home-content h1 span {
-  color: rgb(248, 141, 2);
+  /* color: rgb(248, 141, 2); */
+  color: rgb(118, 210, 247);
 }
 
 .home-content .text-animate {
