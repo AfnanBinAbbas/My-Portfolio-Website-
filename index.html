@@ -1,302 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Afnan Bin Abbas Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="media-queries.css" />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Afnan Bin Abbas — Offensive Security &amp; Penetration Testing</title>
+  <meta name="description" content="Afnan Bin Abbas — penetration tester and offensive security researcher. Web and network pentesting, LOTL tradecraft, defense evasion and C2 simulation, with detection in mind." />
+  <meta name="theme-color" content="#070708" />
+  <meta property="og:title" content="Afnan Bin Abbas — Offensive Security" />
+  <meta property="og:description" content="Penetration tester and offensive security researcher. I break in, then build the detection that should have caught me." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23070708'/%3E%3Cpath d='M8 24V8h6.5a5.5 5.5 0 0 1 0 11H12v5z' fill='%23ff2a3c'/%3E%3C/svg%3E" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header class="header">
-    <a href="#" class="logo">Afnan <span id="lastname">Bin Abbas</span><span class="animate" style="--i:1;"></span></a>
+  <a class="skip" href="#work">Skip to work</a>
+  <div class="grain" aria-hidden="true"></div>
 
-    <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:1;"></span></div>
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Afnan Bin Abbas — home">
+      <span class="brand-mark">ABA</span>
+      <span class="brand-name">Afnan Bin Abbas</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="nav-menu" id="nav-menu" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#experience">Experience</a>
+      <a href="#book">Book</a>
       <a href="#contact">Contact</a>
-      <span class="active-nav"></span>
-      <span class="animate" style="--i:1;"></span>
+      <a class="nav-cta" href="#book">Book a call</a>
     </nav>
   </header>
 
-  <section class="home show-animate" id="home">
-    <div class="home-content">
-      <h1>Hi, I'm <span>Afnan Bin Abbas</span><span class="animate" style="--i:1;"></span></h1>
-      <div class="text-animate">
-        <h3>Cyber Security Engineer and a Penetration Tester</h3>
-        <span class="animate" style="--i:1;"></span>
-      </div>
-      <p>Greetings! I'm a dynamic Cyber Security Engineer and a Penetration Tester, passionate about crafting
-        captivating web experiences. If you're
-        seeking top-notch front-end services, especially for web portfolios, I'm your go-to creative force. Let's turn
-        your visions into stunning digital realities – feel free to contact!
-        <span class="animate" style="--i:1;">
-      </p>
-      <div class="btn-box">
-        <a href="#contact" class="btn">Contact</a>
-        <a href="./assets/resume.pdf" class="btn" target="_blank">Resume</a>
-        <span class="animate" style="--i:1;"></span>
-      </div>
-    </div>
-    <div class="home-image">
-
-      <img id="home-image" src="./assets/image (2).png" alt="">
-      <!-- <span class="animate" style="--i:2;"></span> -->
-    </div>
-    <div class="home-sci">
-      <a href="https://github.com/AfnanBinAbbas" target="_blank"><i class='bx bxl-github'></i></a>
-      <a href="https://www.linkedin.com/in/afnanbinabbas/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-      <span class="animate" style="--i:6;"></span>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-    <div class="about-img">
-      <img src="./assets/pic4.jpg" alt="Profile">
-      <span class="circle-spin"></span>
-      <span class="animate scroll" style="--i:1;"></span>
-    </div>
-
-    <div class="about-content">
-      <h3>Cyber Security Engineer and a Penetration Tester<span class="animate scroll" style="--i:1;"></span></h3>
-      <p>I'm Afnan Bin Abbas, an enthusiastic Cyber Security Engineer and a Penetration Tester hailing from the vibrant
-        city of Karachi, Pakistan.
-        Currently pursuing my Cyber Security degree at GIKI, I'm on an unwavering quest to expand my skill set and
-        knowledge horizons. My insatiable curiosity and unyielding dedication drive me to stay at the forefront of
-        technology trends. With a strong passion for AI and its limitless possibilities, I'm thrilled to steer my career
-        in this exciting direction. Let's embark on a journey of innovation and learning together!
-        <span class="animate scroll" style="--i:1;"></span>
-      </p>
-
-
-    </div>
-  </section>
-
-  <section class="education" id="education">
-    <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-    <div class="education-row">
-      <div class="education-column">
-        <h3 class="title">Education</h3>
-        <div class="education-box">
-          <div class="education-content">
-            <div class="content">
-              <div class="year"><i class='bx bxs-calendar'></i> 2022-Present</div>
-              <h3>Bachelors of Science in Computer Science (Cyber Security)-GIKI</h3>
-              <p>GIKI's CS program offers renowned faculty, advanced research, and modern resources, shaping me through
-                rigorous academics and vibrant extracurriculars towards triumph.</p>
-            </div>
-          </div>
-
-          <div class="education-content">
-            <div class="content">
-              <div class="year"><i class='bx bxs-calendar'></i> 2019-2021</div>
-              <h3>ALevels-Credo College Karachi</h3>
-              <p>I completed my A-levels from esteemed Credo College, Karachi known for excellence. Amidst
-                brilliance and top facilities, I honed invaluable skills.</p>
-            </div>
-          </div>
-
-          <div class="education-content">
-            <div class="content">
-              <div class="year"><i class='bx bxs-calendar'></i> 2017-2019</div>
-              <h3>Olevels-Beacon Light Academy</h3>
-              <p>Complete my O-levels from Beacon Light Academy, Karachi pivotal experience
-                that laid the bedrock for my academic journey.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="education-column">
-        <h3 class="title">Experience</h3>
-        <div class="education-box">
-          <div class="education-content">
-            <div class="content">
-              <div class="year"><i class='bx bxs-calendar'></i> June 2024-July 2023</div>
-              <h3>Cyber Security Engineer and a Penetration Tester Intern-KaiRiz Cyber Technologies (SMC-Private)
-                Limited</h3>
-              <p>During this internship, I accomplished:
-                <br>
-                ✔️ Conducted thorough network and web penetration testing, generating detailed reports for stakeholders.
-                <br> ✔️ Decrypted various hash types using tools such as Hashcat and HashId.
-                <br> ✔️ Mini Project: Executed a comprehensive security assessment and hardening of a small business
-                network.
-                <!-- <br>✔️Completed 300+ Challenges<br>✔️5 Projects<br>✔️Explored HTML, CSS, and JavaScript ES6 and PHP,
-                jQuery, and WordPress basics -->
-              </p>
-            </div>
-          </div>
-          <div class="education-content">
-            <div class="content">
-              <div class="year"><i class='bx bxs-calendar'></i> April 2024-May 2024</div>
-              <h3>Compliance Auditor-PTCL.Official</h3>
-              <p>Key Responsibilities:
-                <br>• Delivered an in-depth audit report assessing the organization's security protocols.
-                <br>• Conducted a detailed analysis to identify vulnerabilities within the existing systems.
-                <br>• Provided strategic recommendations to enhance the overall cybersecurity posture.
-                <!-- <br>🎮Guess
-                Game<br>🧮Basic
-                Calculator<br>🎯Two-Player Tic Tac Toe -->
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="education-row">
-        <div class="education-column">
-          <h3 class="title">Projects</h3>
-          <div class="education-box">
-            <div class="education-content">
-              <div class="content">
-                <div class="year"><i class='bx bxs-calendar'></i> 2022-Present</div>
-                <h3>Bachelors of Science in Computer Science (Cyber Security)-GIKI</h3>
-                <p>GIKI's CS program offers renowned faculty, advanced research, and modern resources, shaping me
-                  through
-                  rigorous academics and vibrant extracurriculars towards triumph.</p>
-              </div>
-            </div>
-
-            <div class="education-content">
-              <div class="content">
-                <div class="year"><i class='bx bxs-calendar'></i> 2019-2021</div>
-                <h3>ALevels-Credo College Karachi</h3>
-                <p>I completed my A-levels from esteemed Credo College, Karachi known for excellence. Amidst
-                  brilliance and top facilities, I honed invaluable skills.</p>
-              </div>
-            </div>
-
-            <div class="education-content">
-              <div class="content">
-                <div class="year"><i class='bx bxs-calendar'></i> 2017-2019</div>
-                <h3>Olevels-Beacon Light Academy</h3>
-                <p>Complete my O-levels from Beacon Light Academy, Karachi pivotal experience
-                  that laid the bedrock for my academic journey.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-    <div class="skills-row">
-      <div class="skills-column">
-        <h3 class="title">Programming Skills</h3>
-
-        <div class="skills-box">
-          <div class="skills-content">
-
-            <div class="progress">
-              <h3>C++ <span>80%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-            <div class="progress">
-              <h3>Python <span>50%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>JavaScript <span>50%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-            <div class="progress">
-              <h3>Pandas <span>50%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-            <div class="progress">
-              <h3>React <span>40%</span></h3>
-              <div class="bar"><span></span></div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="skills-column">
-        <h3 class="title">Tools Proficiency</h3>
-
-        <div class="skills-box">
-          <div class="skills-content">
-            <div class="progress">
-              <h3>Nmap <span>80%</span></h3>
-              <!-- <div class="bar"><span></span></div> -->
-            </div>
-
-            <div class="progress">
-              <h3>Nikto <span>70%</span></h3>
-              <!-- <div class="bar"><span></span></div> -->
-            </div>
-            <div class="progress">
-              <h3>Burpsuite <span>50%</span></h3>
-              <!-- <div class="bar"><span></span></div> -->
-            </div>
-
-            <div class="progress">
-              <h3>Metasploit <span>50%</span></h3>
-              <!-- <div class="bar"><span></span></div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2 class="heading">Find <span>Me!</span></h2>
-
-    <div class="contact-info">
-      <div class="info">
-        <img src="./assets/email.png" alt="" class="icon">
-        <p><a href="mailto:afnanbabbas@gmail.com" target="_blank">afnanbabbas@gmail.com</a></p>
-      </div>
-      <div class="info">
-        <img src="./assets/linkedin.png" alt="" class="icon">
-        <p><a href="https://www.linkedin.com/in/afnanbinabbas/" target="_blank">Linkedin</a></p>
-      </div>
-      <div class="info">
-        <img src="./assets/github.png" alt="" class="icon">
-        <p><a href="https://github.com/AfnanBinAbbas" target="_blank">GitHub</a>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker"><span class="pulse" aria-hidden="true"></span>Offensive security · Detection engineering</p>
+        <h1>Afnan<br /><span class="dim">Bin Abbas</span></h1>
+        <p class="role">Offensive security consultant · Red &amp; purple team<span class="caret" aria-hidden="true"></span></p>
+        <p class="lede">
+          I break into networks and web applications, then prove whether your defenses would
+          have caught me. 100+ businesses secured through penetration testing, hardening and
+          detection validation — LOTL tradecraft, defense evasion and C2 simulation included.
         </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#book">Book a session<span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#work">Selected work</a>
+        </div>
+        <ul class="socials" aria-label="Profiles">
+          <li><a href="https://github.com/AfnanBinAbbas" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/afnanbinabbas/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://tryhackme.com/r/p/crackexe" target="_blank" rel="noopener">TryHackMe</a></li>
+          <li><a href="mailto:afnanbabbas@gmail.com">Email</a></li>
+        </ul>
       </div>
-      <div class="info">
-        <img src="./assets/THMlogo.png" alt="" class="icon">
-        <p><a href="https://tryhackme.com/r/p/crackexe" target="_blank">TryHackMe</a></p>
-      </div>
-      <div class="info">
-        <img src="./assets/upwork.png" alt="" class="icon">
-        <p><a href="https://www.upwork.com/freelancers/~0163d90adae17869bf" target="_blank">Upwork</a></p>
-      </div>
-    </div>
-  </section>
 
-  <footer class="footer" id="footer">
-    <div class="footer-text">
-      <p>Copyright &copy; 2024 by Afnan Bin Abbas | All rights Reserved</p>
-      <p>Credits to Junaid Saleem</p>
+      <figure class="portrait">
+        <div class="portrait-frame">
+          <img src="assets/portrait.jpg" alt="Portrait of Afnan Bin Abbas" width="1216" height="1217" />
+          <span class="scan" aria-hidden="true"></span>
+        </div>
+        <figcaption><span>Remote engagements</span><span>Offense / defense</span></figcaption>
+      </figure>
+    </section>
+
+    <div class="proof" aria-label="At a glance">
+      <div class="proof-item">
+        <span class="proof-num">100+</span>
+        <span class="proof-label">Businesses secured</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">Red&nbsp;+&nbsp;Purple</span>
+        <span class="proof-label">Offense and detection</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">Remote</span>
+        <span class="proof-label">Worldwide engagements</span>
+      </div>
     </div>
-    <div class="footer-iconTop">
-      <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>LOTL / LOLBAS</span><span class="slash">/</span>
+        <span>C2 simulation</span><span class="slash">/</span>
+        <span>Defense evasion</span><span class="slash">/</span>
+        <span>Web &amp; network pentesting</span><span class="slash">/</span>
+        <span>Detection validation</span><span class="slash">/</span>
+        <span>Offensive security</span><span class="slash">/</span>
+        <span>LOTL / LOLBAS</span><span class="slash">/</span>
+        <span>C2 simulation</span><span class="slash">/</span>
+        <span>Defense evasion</span><span class="slash">/</span>
+        <span>Web &amp; network pentesting</span><span class="slash">/</span>
+        <span>Detection validation</span><span class="slash">/</span>
+        <span>Offensive security</span><span class="slash">/</span>
+      </div>
     </div>
+
+    <section class="section" id="work">
+      <header class="section-head" data-reveal>
+        <p class="num">01</p>
+        <h2>Selected work</h2>
+        <p class="section-sub">Sanctioned engagements, audits and a lab built to be caught.</p>
+      </header>
+
+      <div class="work-grid">
+        <article class="card" data-reveal>
+          <div class="card-meta"><span class="tag">Internship</span><span class="year">2023 — 2024</span></div>
+          <h3>Network &amp; web penetration testing</h3>
+          <p class="org">KaiRiz Cyber Technologies</p>
+          <p class="desc">
+            Scoped and ran internal network and web application tests, then delivered
+            stakeholder-facing reports with reproduction steps and remediation guidance.
+            Also recovered passwords from captured hashes with Hashcat and HashID.
+          </p>
+          <ul class="chips">
+            <li>Nmap</li><li>Burp Suite</li><li>Metasploit</li><li>Hashcat</li><li>Reporting</li>
+          </ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card-meta"><span class="tag">Project</span><span class="year">2024</span></div>
+          <h3>Small-business network assessment &amp; hardening</h3>
+          <p class="org">KaiRiz Cyber Technologies</p>
+          <p class="desc">
+            End-to-end security assessment of a small business network: enumeration,
+            service and web checks, risk-ranked findings, and a hardening pass that closed
+            the exposed surface without breaking day-to-day operations.
+          </p>
+          <ul class="chips">
+            <li>Nmap</li><li>Nikto</li><li>Hardening</li><li>Risk ranking</li>
+          </ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card-meta"><span class="tag">Audit</span><span class="year">Apr — May 2024</span></div>
+          <h3>Security compliance audit</h3>
+          <p class="org">PTCL</p>
+          <p class="desc">
+            Audited the organisation's security protocols against its own controls, mapped
+            weaknesses in existing systems, and delivered a prioritised set of recommendations
+            to lift the overall security posture.
+          </p>
+          <ul class="chips">
+            <li>Audit</li><li>Gap analysis</li><li>Remediation</li><li>Reporting</li>
+          </ul>
+        </article>
+
+        <article class="card card-lab" data-reveal>
+          <div class="card-meta"><span class="tag tag-red">Personal lab</span><span class="year">Ongoing</span></div>
+          <h3>C2 &amp; LOTL detection range</h3>
+          <p class="org">Self-hosted, isolated</p>
+          <p class="desc">
+            A lab range that emulates living-off-the-land tradecraft, defense evasion and C2
+            traffic so I can see exactly what telemetry each technique leaves behind — and
+            tune detections around the gaps. Offense with the defender's scoreboard in view.
+          </p>
+          <ul class="chips">
+            <li>LOLBAS</li><li>C2 simulation</li><li>Defense evasion</li><li>Detection tuning</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <header class="section-head" data-reveal>
+        <p class="num">02</p>
+        <h2>GitHub projects</h2>
+        <p class="section-sub">Ten of 28 public repositories — tooling, research and labs. Hover a card for the details.</p>
+      </header>
+
+      <div class="proj-grid">
+        <a class="proj" href="https://github.com/AfnanBinAbbas/PrivaDB" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">01</span><span class="proj-lang">TypeScript</span></div>
+          <h3>PrivaDB</h3>
+          <p class="proj-meta">Privacy research · ★ 20</p>
+          <div class="proj-hover">
+            <p>IndexedDB privacy research: which sites quietly move your data to trackers, with no consent in sight.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+
+        <a class="proj" href="https://github.com/AfnanBinAbbas/Android-Exploitation" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">02</span><span class="proj-lang">Metasploit</span></div>
+          <h3>Android Exploitation</h3>
+          <p class="proj-meta">Exploitation lab · ★ 5</p>
+          <div class="proj-hover">
+            <p>Android exploitation lab — payload delivery, Meterpreter sessions and post-exploitation.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+
+        <a class="proj" href="https://github.com/AfnanBinAbbas/NetScan" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">03</span><span class="proj-lang">Python</span></div>
+          <h3>NetScan</h3>
+          <p class="proj-meta">SOC · GAN malware analysis</p>
+          <div class="proj-hover">
+            <p>Realtime GAN-based malware analysis and monitoring console built for SOC triage.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+
+        <a class="proj" href="https://github.com/AfnanBinAbbas/Neural-Network-based-malware-traffic-detection-pcap2image" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">04</span><span class="proj-lang">Python</span></div>
+          <h3>PCAP2Image Traffic Detection</h3>
+          <p class="proj-meta">Malware traffic · Neural nets</p>
+          <div class="proj-hover">
+            <p>Turns packet captures into images and classifies malware traffic with a neural network.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+
+        <a class="proj" href="https://github.com/AfnanBinAbbas/IP2Geo-Tracer" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">05</span><span class="proj-lang">Go</span></div>
+          <h3>IP2Geo Tracer</h3>
+          <p class="proj-meta">Recon · CIDR geolocation</p>
+          <div class="proj-hover">
+            <p>CIDR geolocation at scale — first-IP queries, region filters and JSON output.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+
+        <a class="proj" href="https://github.com/AfnanBinAbbas/Pingsweep" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">06</span><span class="proj-lang">Shell</span></div>
+          <h3>Pingsweep</h3>
+          <p class="proj-meta">Recon · Host discovery</p>
+          <div class="proj-hover">
+            <p>Enumerates every live host on a subnet with a single sweep.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+
+        <a class="proj" href="https://github.com/AfnanBinAbbas/PortScanner" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">07</span><span class="proj-lang">Python</span></div>
+          <h3>PortScanner</h3>
+          <p class="proj-meta">Recon · Service mapping</p>
+          <div class="proj-hover">
+            <p>Multithreaded port scanner for mapping exposed services fast.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+
+        <a class="proj" href="https://github.com/AfnanBinAbbas/Wifi_Retreiver" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">08</span><span class="proj-lang">Batch</span></div>
+          <h3>WiFi Retriever</h3>
+          <p class="proj-meta">Windows · Forensics</p>
+          <div class="proj-hover">
+            <p>Extracts saved Windows Wi-Fi profiles for audits and forensic review.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+
+        <a class="proj" href="https://github.com/AfnanBinAbbas/Digital-Forensics-Case-Study-Fake-Profiling-Osint" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">09</span><span class="proj-lang">OSINT</span></div>
+          <h3>Fake Profiling Case Study</h3>
+          <p class="proj-meta">Digital forensics</p>
+          <div class="proj-hover">
+            <p>Forensic case study on fake profiling, OSINT trails and evidence handling.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+
+        <a class="proj" href="https://github.com/AfnanBinAbbas/FaultGuard-AI" target="_blank" rel="noopener" data-reveal>
+          <div class="proj-top"><span class="proj-idx">10</span><span class="proj-lang">AI</span></div>
+          <h3>FaultGuard AI</h3>
+          <p class="proj-meta">Log diagnosis · Automation</p>
+          <div class="proj-hover">
+            <p>AI log-diagnosis across six fault tasks with cross-domain adaptation.</p>
+            <span class="proj-link">View repo →</span>
+          </div>
+        </a>
+      </div>
+
+      <p class="proj-all" data-reveal><a href="https://github.com/AfnanBinAbbas?tab=repositories" target="_blank" rel="noopener">All 28 repositories on GitHub <span aria-hidden="true">→</span></a></p>
+    </section>
+
+    <section class="section" id="capabilities">
+      <header class="section-head" data-reveal>
+        <p class="num">03</p>
+        <h2>Capabilities</h2>
+        <p class="section-sub">No badge wall — the evidence is in the work. Tools grouped by how I use them.</p>
+      </header>
+
+      <div class="cap-grid">
+        <div class="cap" data-reveal>
+          <h3><span class="cap-idx">A</span>Offensive</h3>
+          <p>Reconnaissance through exploitation, with reporting that a client can act on.</p>
+          <ul class="chips">
+            <li>Nmap</li><li>Burp Suite</li><li>Nikto</li><li>Metasploit</li>
+            <li>Hashcat</li><li>HashID</li><li>Web app testing</li><li>Network testing</li>
+          </ul>
+        </div>
+        <div class="cap" data-reveal>
+          <h3><span class="cap-idx">B</span>Tradecraft</h3>
+          <p>Adversary behaviour practised in isolated labs and sanctioned assessments. Current research: covert channels and evasion against NGFW and EDR.</p>
+          <ul class="chips">
+            <li>LOTL / LOLBAS</li><li>Defense evasion</li><li>C2 simulation</li>
+            <li>Lab range design</li><li>Telemetry review</li>
+          </ul>
+        </div>
+        <div class="cap" data-reveal>
+          <h3><span class="cap-idx">C</span>Engineering</h3>
+          <p>Scripting and tooling to automate the boring parts and parse the loud ones.</p>
+          <ul class="chips">
+            <li>Python</li><li>C++</li><li>JavaScript</li><li>Pandas</li>
+            <li>React</li><li>Linux</li><li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <header class="section-head" data-reveal>
+        <p class="num">04</p>
+        <h2>Experience</h2>
+        <p class="section-sub">Where the theory met a real network.</p>
+      </header>
+
+      <ol class="timeline">
+        <li data-reveal>
+          <div class="tl-when">2023 — 2024</div>
+          <div class="tl-body">
+            <h3>Cyber Security &amp; Penetration Testing Intern</h3>
+            <p class="org">KaiRiz Cyber Technologies (SMC-Private) Limited</p>
+            <ul class="points">
+              <li>Conducted network and web penetration tests and turned findings into detailed reports for stakeholders.</li>
+              <li>Recovered passwords across multiple hash types using Hashcat and HashID.</li>
+              <li>Ran a mini engagement: full assessment and hardening of a small business network.</li>
+            </ul>
+          </div>
+        </li>
+        <li data-reveal>
+          <div class="tl-when">Apr — May 2024</div>
+          <div class="tl-body">
+            <h3>Compliance Auditor</h3>
+            <p class="org">PTCL</p>
+            <ul class="points">
+              <li>Delivered an in-depth audit report assessing the organisation's security protocols.</li>
+              <li>Analysed existing systems to identify vulnerabilities and control gaps.</li>
+              <li>Recommended strategic fixes to strengthen the overall security posture.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="book">
+      <header class="section-head" data-reveal>
+        <p class="num">05</p>
+        <h2>Book a session</h2>
+        <p class="section-sub">Bring your infrastructure. We'll go through what is exposed, what it would take to break it, and what your tooling currently misses.</p>
+      </header>
+
+      <ol class="steps" data-reveal>
+        <li><span class="step-num">01</span><h3>Scope</h3><p>A short call, a written scope and fixed deliverables — no vague retainers.</p></li>
+        <li><span class="step-num">02</span><h3>Assess</h3><p>External and internal testing, with evidence and impact captured as I go.</p></li>
+        <li><span class="step-num">03</span><h3>Harden &amp; validate</h3><p>Prioritised fixes, then a re-test that proves the changes actually hold.</p></li>
+      </ol>
+
+      <div class="booking-grid">
+        <div class="services" data-reveal>
+          <article class="service">
+            <div class="service-top"><span class="tag">60 min</span><span class="year">Remote</span></div>
+            <h3>Infrastructure security review</h3>
+            <p>External footprint, exposed services, configuration and patch posture — with a prioritised list of what to fix first.</p>
+            <button class="service-pick" type="button" data-service="Infrastructure security review">Request this<span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="service">
+            <div class="service-top"><span class="tag">45 min</span><span class="year">Remote</span></div>
+            <h3>Web application assessment</h3>
+            <p>Scope, methodology and deliverables for an application pentest, mapped to the stack you actually run.</p>
+            <button class="service-pick" type="button" data-service="Web application assessment">Request this<span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="service service-red">
+            <div class="service-top"><span class="tag tag-red">60 min</span><span class="year">Purple team</span></div>
+            <h3>Detection validation</h3>
+            <p>Replay LOTL and C2 behaviour against your telemetry and see which of it your EDR and SIEM never noticed.</p>
+            <button class="service-pick" type="button" data-service="Detection validation (purple team)">Request this<span aria-hidden="true">→</span></button>
+          </article>
+        </div>
+
+        <div class="form-panel" data-reveal>
+          <div class="form-head">
+            <h3>Request a slot</h3>
+            <p class="form-meta">Remote · PKT (UTC+5) · confirmed by email</p>
+          </div>
+
+          <form class="form" id="booking-form" method="post" action="mailto:afnanbabbas@gmail.com" enctype="text/plain">
+            <div class="form-grid">
+              <div class="field">
+                <label for="bk-name">Name</label>
+                <input id="bk-name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+              </div>
+              <div class="field">
+                <label for="bk-email">Email</label>
+                <input id="bk-email" name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+              </div>
+              <div class="field full">
+                <label for="bk-service">Service</label>
+                <select id="bk-service" name="service" required>
+                  <option value="Infrastructure security review">Infrastructure security review</option>
+                  <option value="Web application assessment">Web application assessment</option>
+                  <option value="Detection validation (purple team)">Detection validation (purple team)</option>
+                  <option value="Something else">Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="bk-date">Preferred date</label>
+                <input id="bk-date" name="date" type="date" required />
+              </div>
+              <div class="field">
+                <label for="bk-time">Preferred time (PKT)</label>
+                <select id="bk-time" name="time" required>
+                  <option value="10:00">10:00</option>
+                  <option value="11:00">11:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="16:00">16:00</option>
+                  <option value="17:00">17:00</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="bk-notes">What should we look at?</label>
+                <textarea id="bk-notes" name="notes" rows="3" placeholder="Stack, scope, constraints, anything already on fire."></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Request session<span aria-hidden="true">→</span></button>
+              <a class="btn btn-ghost" href="mailto:afnanbabbas@gmail.com">Email instead</a>
+            </div>
+            <p class="form-note">Opens your mail app with the details filled in. Nothing is booked until you get a confirmation.</p>
+            <p class="book-status" id="book-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <header class="section-head" data-reveal>
+        <p class="num">06</p>
+        <h2>Contact</h2>
+        <p class="section-sub">Red team, purple team or a hard target — I'm listening.</p>
+      </header>
+
+      <div class="contact-grid">
+        <div data-reveal>
+          <p class="contact-big">Let's find out<br />what breaks.</p>
+          <p class="contact-note">
+            Taking on a limited number of infrastructure engagements each month. Remote,
+            worldwide — offense and defense handled by the same person.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:afnanbabbas@gmail.com">afnanbabbas@gmail.com<span aria-hidden="true">→</span></a>
+            <button class="btn btn-ghost" id="copy-email" type="button" data-email="afnanbabbas@gmail.com">Copy address</button>
+          </div>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <ul class="contact-list" data-reveal>
+          <li><a href="https://github.com/AfnanBinAbbas" target="_blank" rel="noopener"><span>GitHub</span><span>/AfnanBinAbbas</span></a></li>
+          <li><a href="https://www.linkedin.com/in/afnanbinabbas/" target="_blank" rel="noopener"><span>LinkedIn</span><span>/in/afnanbinabbas</span></a></li>
+          <li><a href="https://tryhackme.com/r/p/crackexe" target="_blank" rel="noopener"><span>TryHackMe</span><span>/p/crackexe</span></a></li>
+          <li><a href="https://www.upwork.com/freelancers/~0163d90adae17869bf" target="_blank" rel="noopener"><span>Upwork</span><span>Freelancer profile</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Afnan Bin Abbas</p>
+    <p class="footer-mid">Remote · Worldwide engagements</p>
+    <a href="#top">Back to top ↑</a>
   </footer>
+
   <script src="script.js"></script>
 </body>
-
 </html>
