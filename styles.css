@@ -323,7 +323,7 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
 .portrait {
   justify-self: center;
   width: 100%;
-  max-width: 318px;
+  max-width: 286px;
   margin: 0;
 }
 .portrait-frame {
