@@ -681,30 +681,24 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
   text-transform: uppercase;
   color: #8f8986;
 }
-.proj-hover {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 12px;
-  padding: 20px;
-  background: linear-gradient(180deg, rgba(8, 8, 10, 0.2) 0%, rgba(12, 5, 7, 0.94) 42%, rgba(12, 5, 7, 0.99) 100%);
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.22s ease, transform 0.22s ease;
-  pointer-events: none;
+.proj-desc {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
 }
-.proj:hover .proj-hover,
-.proj:focus-visible .proj-hover { opacity: 1; transform: none; }
-.proj-hover p { font-size: 13px; line-height: 1.6; color: #d9d3d0; }
 .proj-link {
+  display: inline-flex;
+  margin-top: auto;
+  padding-top: 16px;
   font-family: var(--mono);
   font-size: 9.5px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--blood);
+  transition: color 0.18s ease;
 }
+.proj:hover .proj-link { color: #fff; }
 .proj-all { margin-top: 22px; }
 .proj-all a {
   display: inline-flex;
@@ -720,19 +714,6 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
   transition: color 0.18s ease, border-color 0.18s ease;
 }
 .proj-all a:hover { color: var(--blood); border-color: var(--blood-line); }
-
-@media (hover: none) {
-  .proj { min-height: 0; }
-  .proj-hover {
-    position: static;
-    opacity: 1;
-    transform: none;
-    padding: 14px 0 0;
-    gap: 8px;
-    background: none;
-    pointer-events: auto;
-  }
-}
 
 /* ---------- how it works ---------- */
 .steps {
