@@ -565,11 +565,59 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
 }
 .worklist .tag { white-space: nowrap; }
 
+/* ---------- stage / talks ---------- */
+.stage {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+}
+.stage-figure {
+  position: relative;
+  justify-self: center;
+  width: 100%;
+  max-width: 250px;
+  margin: 0;
+  transform: rotate(-2deg);
+}
+.stage-figure::before {
+  content: "";
+  position: absolute;
+  inset: -8% -10% -6%;
+  border: 1px solid var(--blood-line);
+  border-radius: 48% 52% 45% 55% / 52% 46% 54% 48%;
+  transform: rotate(4deg);
+  pointer-events: none;
+}
+.stage-figure img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(1) contrast(1.06) brightness(0.96) drop-shadow(9px 10px 0 rgba(255, 37, 55, 0.5));
+}
+.stage-figure figcaption {
+  margin-top: 18px;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--blood);
+  text-align: center;
+  transform: rotate(2deg);
+}
+.stage-copy p {
+  max-width: 48ch;
+  color: #c6c0bd;
+  font-size: clamp(15px, 1.3vw, 16.5px);
+  line-height: 1.72;
+}
+.stage-copy p + p { margin-top: 16px; color: var(--muted); font-size: 14.5px; }
+
 /* ---------- repo links ---------- */
 .repolist {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0 26px;
+  border-bottom: 1px solid var(--line);
 }
 .repolist a {
   display: flex;
@@ -590,9 +638,7 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
   color: var(--faint);
   text-align: right;
 }
-.repolist li:nth-child(7) a,
-.repolist li:nth-child(8) a,
-.repolist li:nth-child(9) a { border-bottom: 1px solid var(--line); }
+
 
 /* ---------- ticker ---------- */
 .ticker {
@@ -1266,6 +1312,8 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
   .repolist { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero--split { padding-top: calc(var(--nav-h) + 28px); }
   .hero-form { justify-self: stretch; max-width: none; }
+  .stage { grid-template-columns: minmax(0, 1fr); }
+  .stage-figure { max-width: 210px; order: -1; margin-bottom: 8px; }
 }
 
 @media (max-width: 760px) {
@@ -1322,11 +1370,11 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
   .proj-grid { grid-template-columns: minmax(0, 1fr); }
   .worklist li { grid-template-columns: minmax(0, 1fr); gap: 6px; }
   .worklist .tag { justify-self: start; margin-top: 8px; }
-  .repolist { grid-template-columns: minmax(0, 1fr); }
-  .repolist li:nth-child(7) a,
-  .repolist li:nth-child(8) a,
-  .repolist li:nth-child(9) a { border-bottom: 0; }
-  .repolist li:last-child a { border-bottom: 1px solid var(--line); }
+  .repolist { gap: 0 16px; }
+  .repolist a { font-size: 12.5px; }
+  .repolist span:last-child { font-size: 8px; }
+  .section { padding-top: 46px; padding-bottom: 46px; }
+  .section-head { margin-bottom: 26px; }
 }
 
 /* ---------- motion preferences ---------- */
