@@ -15,8 +15,8 @@
   --blood-soft: rgba(255, 37, 55, 0.08);
   --line: rgba(255, 255, 255, 0.085);
   --line-strong: rgba(255, 255, 255, 0.16);
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --mono: ui-monospace, SFMono-Regular, "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  --sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Code", Consolas, monospace;
   --max: 1180px;
   --pad: clamp(20px, 4vw, 48px);
   --nav-h: 68px;
@@ -40,8 +40,8 @@ body {
     var(--bg);
   color: var(--text);
   font-family: var(--sans);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 16.5px;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -231,14 +231,14 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
 }
 
 .hero h1 {
-  font-size: clamp(3rem, 8.6vw, 6.6rem);
-  line-height: 0.9;
-  letter-spacing: -0.045em;
+  font-size: clamp(3.1rem, 9.6vw, 7.3rem);
+  line-height: 0.86;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
 }
 .hero h1 .dim {
   color: transparent;
-  -webkit-text-stroke: 1.4px rgba(244, 241, 240, 0.42);
+  -webkit-text-stroke: 1.2px rgba(244, 241, 240, 0.38);
 }
 
 .role {
@@ -260,11 +260,11 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
 @keyframes blink { 50% { opacity: 0; } }
 
 .lede {
-  margin-top: 24px;
-  max-width: 56ch;
+  margin-top: 26px;
+  max-width: 52ch;
   color: #c6c0bd;
-  font-size: clamp(15px, 1.4vw, 17px);
-  line-height: 1.75;
+  font-size: clamp(15.5px, 1.35vw, 17.5px);
+  line-height: 1.72;
 }
 
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
@@ -321,9 +321,9 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
 
 /* portrait */
 .portrait {
-  justify-self: end;
+  justify-self: center;
   width: 100%;
-  max-width: 430px;
+  max-width: 318px;
   margin: 0;
 }
 .portrait-frame {
@@ -351,14 +351,14 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
   position: absolute;
   inset: 8px;
   pointer-events: none;
-  background: linear-gradient(155deg, rgba(255, 37, 55, 0.6), rgba(255, 37, 55, 0.06) 48%, rgba(80, 0, 8, 0.62));
+  background: linear-gradient(155deg, rgba(255, 37, 55, 0.42), rgba(255, 37, 55, 0.04) 48%, rgba(80, 0, 8, 0.5));
   mix-blend-mode: color;
 }
 .portrait img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.16) brightness(0.88);
+  filter: grayscale(1) contrast(1.06) brightness(0.96);
 }
 .scan {
   position: absolute;
@@ -434,7 +434,14 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
 }
 .section:first-of-type { border-top: 0; }
 
-.section-head { margin-bottom: clamp(30px, 4vw, 52px); }
+.section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 30ch);
+  align-items: end;
+  gap: 12px 28px;
+  margin-bottom: clamp(32px, 4.5vw, 56px);
+}
+.section-head .num { grid-column: 1 / -1; }
 .num {
   font-family: var(--mono);
   font-size: 11px;
@@ -469,10 +476,13 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
   background: radial-gradient(820px 420px at 0% 104%, rgba(255, 37, 55, 0.07), transparent 70%);
 }
 .section-sub {
-  margin-top: 14px;
-  max-width: 52ch;
+  justify-self: end;
+  margin-top: 0;
+  max-width: 34ch;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  text-align: right;
 }
 
 /* ---------- work ---------- */
@@ -613,8 +623,8 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
 /* ---------- github projects ---------- */
 .proj-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(212px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
 }
 .proj {
   position: relative;
@@ -684,8 +694,8 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
 .proj-desc {
   margin-top: 12px;
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 13.5px;
+  line-height: 1.62;
 }
 .proj-link {
   display: inline-flex;
@@ -1036,7 +1046,8 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
     grid-template-columns: minmax(0, 1fr);
     padding-top: calc(var(--nav-h) + 40px);
   }
-  .portrait { order: -1; justify-self: start; max-width: 280px; }
+  .portrait { order: -1; justify-self: start; max-width: 250px; }
+  .proj-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .portrait-frame::before { transform: translate(12px, 12px); }
   .work-grid { grid-template-columns: minmax(0, 1fr); }
   .cap-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
@@ -1044,6 +1055,13 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
   .booking-grid { grid-template-columns: minmax(0, 1fr); }
   .contact-grid { grid-template-columns: minmax(0, 1fr); }
   .timeline li { grid-template-columns: 130px minmax(0, 1fr); }
+  .section-head { grid-template-columns: minmax(0, 1fr); }
+  .section-sub {
+    justify-self: start;
+    max-width: 52ch;
+    margin-top: 6px;
+    text-align: left;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1097,6 +1115,7 @@ h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 
     padding-left: 0;
   }
   .steps { grid-template-columns: minmax(0, 1fr); }
+  .proj-grid { grid-template-columns: minmax(0, 1fr); }
 }
 
 /* ---------- motion preferences ---------- */
