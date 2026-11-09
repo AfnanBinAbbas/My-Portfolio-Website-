@@ -128,7 +128,7 @@
       } catch (_) {
         ok = legacyCopy(email);
       }
-      status.textContent = ok ? "Copied to clipboard." : "Copy blocked — address is above.";
+      status.textContent = ok ? "Copied to clipboard." : "Copy blocked. Address is above.";
       clearTimeout(timer);
       timer = window.setTimeout(() => {
         status.textContent = "";
